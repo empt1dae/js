@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pr3</title>
+</head>
+
+<body>
+    <!-- 5.1 -->
+    <script>
+        let x = prompt("Введите значение x:");
+        x = Number(x);
+
+        let result;
+
+        if (x <= 0) {
+            result = 1 - x;
+        } else if (x <= 3) {
+            result = Math.pow(x, 3);
+        } else {
+            result = 1 / x;
+        }
+
+        alert("Значение функции f(x) = " + result);
+    </script>
+
+
+    <!-- 5.2 -->
+    <script>
+        let russianColor = prompt("Введите цвет на русском языке:");
+        let englishColor;
+
+        switch (russianColor) {
+            case 'красный':
+                englishColor = 'red';
+                break;
+            case 'синий':
+                englishColor = 'blue';
+                break;
+            case 'зеленый':
+                englishColor = 'green';
+                break;
+            case 'желтый':
+                englishColor = 'yellow';
+                break;
+            case 'черный':
+                englishColor = 'black';
+                break;
+            default:
+                englishColor = 'white';
+        }
+
+
+        alert("Цвет на английском: " + englishColor);
+    </script>
+
+    <!-- 5.3 -->
+    <script>
+        let colorInput = prompt("Введите цвет на русском языке:");
+        let backgroundColor;
+
+        switch (colorInput) {
+            case 'красный':
+                backgroundColor = 'lightred';
+                break;
+            case 'синий':
+                backgroundColor = 'lightblue';
+                break;
+            case 'зеленый':
+                backgroundColor = 'lightgreen';
+                break;
+            case 'желтый':
+                backgroundColor = 'lightyellow';
+                break;
+            case 'черный':
+                backgroundColor = 'black';
+                break;
+            default:
+                backgroundColor = 'white';
+                alert("Цвет не распознан, фон будет белым.");
+        }
+
+
+        document.body.style.backgroundColor = backgroundColor;
+    </script>
+
+    <!-- 5.4 -->
+    <script>
+        let number = prompt("Введите число:");
+        number = Number(number);
+
+        if (number % 2 === 0) {
+            document.body.style.backgroundColor = 'lightblue'; 
+        } else {
+            document.body.style.backgroundColor = 'lightgreen'; 
+        }
+    </script>
+</body>
+
+</html>
