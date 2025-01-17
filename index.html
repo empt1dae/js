@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+
+<body>
+    <script>
+        // 5.1 Приветствие с использованием prompt() и alert()
+        let userName = prompt("Введите ваше имя:");
+        alert(`Привет, ${userName}!`);
+
+        // 5.2 Вывод приветствия в окне браузера
+        document.write(`<h2>Привет, ${userName}!</h2>`);
+
+        // 5.3 Сумма пикселей
+        let px1 = '5.5px';
+        let px2 = '6.25px';
+        let sumPx = parseFloat(px1) + parseFloat(px2); // Преобразуем строки в числа
+        document.write(`<p>Сумма пикселей: ${sumPx}px</p>`);
+
+        // 5.4 Калькуляторы фигур
+        // Вариант 1: Прямоугольник
+        let length = parseFloat(prompt("Введите длину прямоугольника:"));
+        let width = parseFloat(prompt("Введите ширину прямоугольника:"));
+        let rectangleArea = length * width;
+        let rectanglePerimeter = 2 * (length + width);
+        document.write(
+            `<p>Прямоугольник: площадь = ${rectangleArea}, периметр = ${rectanglePerimeter}</p>`
+        );
+
+        // Вариант 2: Круг
+        let radius = parseFloat(prompt("Введите радиус круга:"));
+        let circleArea = Math.PI * radius ** 2;
+        let circumference = 2 * Math.PI * radius;
+        document.write(
+            `<p>Круг: площадь = ${circleArea.toFixed(2)}, длина окружности = ${circumference.toFixed(2)}</p>`
+        );
+
+        // Вариант 3: Треугольник
+        let sideA = parseFloat(prompt("Введите сторону A треугольника:"));
+        let sideB = parseFloat(prompt("Введите сторону B треугольника:"));
+        let sideC = parseFloat(prompt("Введите сторону C треугольника:"));
+        let semiPerimeter = (sideA + sideB + sideC) / 2;
+        let triangleArea = Math.sqrt(
+            semiPerimeter *
+            (semiPerimeter - sideA) *
+            (semiPerimeter - sideB) *
+            (semiPerimeter - sideC)
+        );
+        document.write(`<p>Треугольник: площадь = ${triangleArea.toFixed(2)}</p>`);
+
+        // 5.5 Работа с консолью
+        let decimalNumber = 356;
+        console.log(`Десятичное: ${decimalNumber}`);
+        console.log(`Двоичное: ${decimalNumber.toString(2)}`);
+        console.log(`Восьмеричное: ${decimalNumber.toString(8)}`);
+        console.log(`Шестнадцатеричное: ${decimalNumber.toString(16)}`);
+
+    </script>
+
+</body>
+
+</html>
