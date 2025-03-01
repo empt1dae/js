@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h2>5.1 Таймер (1 минута)</h2>
+    <button onclick="startTimer()">Запустить таймер</button>
+    <div id="timer"></div>
+    
+    <h2>5.2 Электронные часы</h2>
+    <button onclick="startClock()">Запустить часы</button>
+    <div id="clock"></div>
+    
+    <h2>5.3 Таймер обратного отсчета</h2>
+    <button onclick="countdown()">Запустить обратный отсчет</button>
+    <div id="countdown"></div>
+    
+    <h2>5.4 Слайдер</h2>
+    <button onclick="startSlider()">Запустить слайдер</button>
+    <img id="slider"  >
+    
+    <h2>5.5 Открытие фруктов</h2>
+    <button onclick="openFruitImage('apple')">Яблоко</button>
+    <button onclick="openFruitImage('banana')">Банан</button>
+    <button onclick="openFruitImage('cherry')">Вишня</button>
+    
+    <h2>5.6 Отсчет до полуночи</h2>
+    <button onclick="countdownToMidnight()">Запустить отсчет</button>
+    <p>До полуночи осталось:</p>
+    <table>
+        <tr>
+            <th>Часы</th>
+            <th>Минуты</th>
+            <th>Секунды</th>
+        </tr>
+        <tr>
+            <td id="hours">00</td>
+            <td id="minutes">00</td>
+            <td id="seconds">00</td>
+        </tr>
+    </table>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

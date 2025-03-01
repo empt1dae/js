@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+
+</head>
+
+<body>
+   
+
+    <body>
+        <header>
+            <h1>Обработка событий в JavaScript</h1>
+
+            
+        </header>
+
+        <div class="block">
+            <h2> Теоретическая часть </h2>
+            <div class="text">
+                <h4>Введение</h4>
+
+                <p>Обработка событий — это один из ключевых аспектов взаимодействия пользователя с веб-страницей. События могут быть вызваны различными действиями, такими как клики мышью, нажатия клавиш, загрузка страницы и т.д. JavaScript предоставляет мощные инструменты для обработки этих событий, что позволяет создавать интерактивные и динамические веб-приложения.</p>
+
+                <h4>Основные понятия</h4>
+                <ol>
+                    <li> <p> <b>Событие (Event)</b> - это действие или происшествие, которое происходит в браузере, например, клик мыши, нажатие клавиши, загрузка страницы и т.д. </p></li>
+                    
+                    <li> <p> <b>Обработчик события (Event Handler) </b> - это функция, которая вызывается в ответ на возникновение события. </p></li>
+
+                    <li> <p> <b> Всплытие событий (Event Bubbling)  </b> - это процесс, при котором событие сначала обрабатывается на целевом элементе, а затем последовательно на всех его родительских элементах.</p></li>
+
+                    <li> <p> <b>Погружение событий (Event Capturing)  </b> -это процесс, при котором событие сначала обрабатывается на самом верхнем элементе в иерархии DOM, а затем последовательно на всех дочерних элементах, пока не достигнет целевого элемента.  </p></li>
+
+                    <li> <p> <b>Делегирование событий (Event Delegation) </b> -  это техника, при которой обработчик события добавляется к родительскому элементу, а не к каждому дочернему элементу. Это позволяет обрабатывать события на динамически добавляемых элементах. </p></li>
+                </ol>
+
+                <h4>Методы обработки событий</h4>
+
+                <ol>
+                   <li><p><b>addEventListener </b> - это рекомендуемый метод для добавления обработчиков событий. Он позволяет добавлять несколько обработчиков на одно событие и имеет гибкие настройки. </p>
+                    <img src="addEventListener.jpg" alt="">
+                    </li> 
+
+                   <li><p><b>onclick  </b> - это свойство, которое позволяет назначить обработчик события напрямую. Однако, оно менее гибкое, так как позволяет назначить только один обработчик. </p>
+                    <img src="onclick.jpg" alt="">
+                    </li> 
+
+                   <li><p><b>removeEventListener   </b> - метод для удаления обработчика события, добавленного через <i>addEventListener</i> . </p>
+                    <img src="onclick.jpg" alt="">
+                    </li> 
+                </ol>
+
+                <h4>Примеры кода</h4>
+
+                <ol>
+                    <li> <b>Пример использования</b> <i>addEventListener</i> <b>и</b> <i>removeEventListener</i>: 
+                    <img src="primer1.jpg" alt="">
+                    </li>
+
+                    <li>
+                       <b> Пример всплытия событий:</b>
+                       <img src="primer2.jpg" alt="">
+
+                    </li>
+
+                    <li>
+                        <b>Пример делегирования событий:</b>
+                        <img src="primer3.jpg" alt="">
+
+                    </li>
+
+                </ol>
+
+                <h4>Заключение</h4>
+
+                <p>Обработка событий в JavaScript — это мощный инструмент для создания интерактивных веб-приложений. Понимание таких концепций, как всплытие, погружение и делегирование событий, позволяет эффективно управлять поведением элементов на странице. Использование методов <i>addEventListener</i>  и <i>removeEventListener</i>  обеспечивает гибкость и контроль над обработкой событий. </p>
+            </div>
+        </div>
+        
+        <div class="block">
+            <section id="quiz">
+                <h2>Тестирование</h2>
+                <form id="quiz-form">
+                    
+                    <div class="question" data-timer>
+                        <p>1. Какой метод рекомендуется использовать для добавления обработчика событий?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q1" value="wrong"> onclick</label>
+                            <label><input type="radio" name="q1" value="wrong"> onClick</label>
+                            <label><input type="radio" name="q1" value="correct"> addEventListener</label>
+                            <label><input type="radio" name="q1" value="wrong"> setEventHandler</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>2. Что делает event.stopPropagation()?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q2" value="correct"> Останавливает всплытие события</label>
+                            <label><input type="radio" name="q2" value="wrong"> Останавливает выполнение JavaScript</label>
+                            <label><input type="radio" name="q2" value="wrong"> Удаляет обработчик события</label>
+                            <label><input type="radio" name="q2" value="wrong"> Запрещает кликать на элемент</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>3. Что происходит при всплытии событий?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q3" value="wrong"> Событие идёт от родителя к потомкам</label>
+                            <label><input type="radio" name="q3" value="correct"> Событие идёт от потомка к родителю</label>
+                            <label><input type="radio" name="q3" value="wrong"> Событие обрабатывается только на целевом элементе</label>
+                            <label><input type="radio" name="q3" value="wrong"> Событие отменяется автоматически</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>4. Как удалить обработчик события, добавленный через addEventListener?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q4" value="wrong"> element.stopEventListener(event, handler)</label>
+                            <label><input type="radio" name="q4" value="wrong"> element.removeEventHandler(event, handler)</label>
+                            <label><input type="radio" name="q4" value="correct"> element.removeEventListener(event, handler)</label>
+                            <label><input type="radio" name="q4" value="wrong"> element.deleteEventListener(event, handler)</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>5. Что произойдёт, если на один элемент добавить несколько обработчиков через addEventListener?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q5" value="wrong"> Будет работать только последний обработчик</label>
+                            <label><input type="radio" name="q5" value="wrong"> Браузер выдаст ошибку</label>
+                            <label><input type="radio" name="q5" value="correct"> Все обработчики будут вызваны</label>
+                            <label><input type="radio" name="q5" value="wrong"> Будет вызван только первый обработчик</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>6. Как правильно передать функцию в addEventListener?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q6" value="wrong"> element.addEventListener("click", sayHello());</label>
+                            <label><input type="radio" name="q6" value="correct"> element.addEventListener("click", sayHello);</label>
+                            <label><input type="radio" name="q6" value="wrong"> element.addEventListener("click", "sayHello");</label>
+                            <label><input type="radio" name="q6" value="wrong"> element.addEventListener = sayHello;</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>7. Какое событие сработает при нажатии на клавишу "Enter"?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q7" value="wrong"> "keypress"</label>
+                            <label><input type="radio" name="q7" value="correct"> "keydown"</label>
+                            <label><input type="radio" name="q7" value="wrong"> "click"</label>
+                            <label><input type="radio" name="q7" value="wrong"> "keyup"</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>8. Как правильно получить объект события внутри обработчика? (Выберите все подходящие варианты)</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="checkbox" name="q8" value="correct"> function handleClick(event) { console.log(event); }</label>
+                            <label><input type="checkbox" name="q8" value="correct"> function handleClick(e) { console.log(e); }</label>
+                            <label><input type="checkbox" name="q8" value="wrong"> function handleClick { console.log(event); }</label>
+                            <label><input type="checkbox" name="q8" value="wrong"> function handleClick { console.log(e); }</label>
+                        </div>
+                    </div>
+    
+                    <div class="question" data-timer>
+                        <p>9. Какой вариант обработчика событий верный? (Выберите все подходящие варианты)</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="checkbox" name="q9" value="correct"> element.onclick = function() { alert("Clicked!"); };</label>
+                            <label><input type="checkbox" name="q9" value="wrong"> element.onClick = function() { alert("Clicked!"); };</label>
+                            <label><input type="checkbox" name="q9" value="wrong"> element.addEventHandler("click", function() { alert("Clicked!"); });</label>
+                            <label><input type="checkbox" name="q9" value="wrong"> element.clickHandler = function() { alert("Clicked!"); };</label>
+                        </div>
+                    </div>
+                    
+                    <div class="question" data-timer>
+                        <p>10. Как сделать так, чтобы событие срабатывало только один раз?</p>
+                        <p>Оставшееся время: <span class="time">30</span> сек</p>
+                        <div class="answers">
+                            <label><input type="radio" name="q10" value="wrong"> element.once("click", handler);</label>
+                            <label><input type="radio" name="q10" value="wrong"> element.addEventListener("click", handler, false);</label>
+                            <label><input type="radio" name="q10" value="correct"> element.addEventListener("click", handler, { once: true });</label>
+                            <label><input type="radio" name="q10" value="wrong"> element.on("click", handler, { once: true });</label>
+                        </div>
+                    </div>
+                    
+                    <button type="submit">Завершить тест</button>
+                </form>
+                <p id="result"></p>
+            </section>
+        </div>
+
+    <script src="script.js">
+
+</script>
+</body>
+
+</html>
